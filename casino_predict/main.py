@@ -12,7 +12,7 @@ class die:
 class casino_machine:
     def __init__(self) -> None:
         self.seq = []   # memorize the sequence number
-        self.basic_percentage = 18 / 40  # basic percentage of getting red or black etc
+        self.basic_percentage = 18 / 38  # basic percentage of getting red or black etc
         self.seq_lookback = 5  # specify how many numbers we wanted to look back for
         self.percent_dict = {
             "red_percen" : self.basic_percentage,
@@ -21,8 +21,8 @@ class casino_machine:
             "large_percen" : self.basic_percentage,
             "even_percen" : self.basic_percentage,
             "odd_percen" : self.basic_percentage,
-            "zero_percen" : 1 / 40,
-            "double_zero_percen" : 1 / 40
+            "zero_percen" : 1 / 38,
+            "double_zero_percen" : 1 / 38
         }
     
     def clear_seq(self):
@@ -37,8 +37,8 @@ class casino_machine:
             "large_percen" : self.basic_percentage,
             "even_percen" : self.basic_percentage,
             "odd_percen" : self.basic_percentage,
-            "zero_percen" : 1 / 40,
-            "double_zero_percen" : 1 / 40
+            "zero_percen" : 1 / 38,
+            "double_zero_percen" : 1 / 38
         }
 
     def predict(self):
